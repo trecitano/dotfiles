@@ -31,6 +31,7 @@ BREW_tools=(
   glow 
   hexyl
   lazygit
+  mise
   ripgrep
   tldr
   yazi
@@ -91,6 +92,7 @@ TARGET_DIR="$HOME/.config"
 APPS_WITH_CONFIGS=(
   ghostty
   lazygit
+  mise
   nvim
   yazi
   zed
@@ -105,3 +107,6 @@ done
 
 # Explictly only copy the fish config file 
 cp $CURRENT_DIR/config/fish/config.fish $HOME/.config/fish/config.fish
+
+# Runtimes and editor tooling (language servers, formatters) pinned in config/mise/config.toml
+mise install

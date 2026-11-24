@@ -86,6 +86,7 @@ APPS_cli=(
   git-delta
   glow 
   hexyl 
+  mise
   ripgrep
   tldr
   stow
@@ -165,6 +166,9 @@ sudo ufw enable
 
 # Setup symlinks
 stow -t ~/.config config/
+
+# Runtimes and editor tooling (language servers, formatters) pinned in config/mise/config.toml
+mise install
 
 # Update default shell
 if [[ "$SHELL" != "/usr/bin/fish" ]]; then

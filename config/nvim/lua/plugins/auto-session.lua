@@ -1,13 +1,8 @@
-return {
-  'rmagatti/auto-session',
-  lazy = false,
-  priority = 1000,
+-- https://github.com/rmagatti/auto-session
 
-  ---enables autocomplete for opts
-  ---@module "auto-session"
-  ---@type AutoSession.Config
-  opts = {
-    suppressed_dirs = { '~/', '~/Projects', '~/Downloads', '/' },
-    -- log_level = 'debug',
-  }
+---@module "auto-session"
+---@type AutoSession.Config
+require("auto-session").setup {
+  suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
+  -- log_level = 'debug',
 }

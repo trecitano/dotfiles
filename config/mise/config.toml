@@ -1,0 +1,23 @@
+[tools]
+# Runtimes
+bun = "1.4.2"
+node = "24.15.0"
+ruby = "4.0.6"
+
+# Editor tooling (language servers and formatters for Neovim, which finds them on PATH).
+# Check for updates with `mise outdated`; upgrade with `mise up --bump`.
+lua-language-server = "3.19.2"
+stylua = "2.6.0"
+"go:golang.org/x/tools/gopls" = "0.24.0"
+"npm:pyright" = "1.1.414"
+ruff = "0.17.6"
+"npm:typescript-language-server" = "6.1.0"
+# Fallback for ts_ls outside projects. Stay on 6.x: TypeScript 7 no longer ships tsserver.
+"npm:typescript" = "6.0.3"
+"npm:@tailwindcss/language-server" = "0.16.0"
+"npm:vscode-langservers-extracted" = "4.10.0" # html, json (also provides css)
+"npm:yaml-language-server" = "2.0.0"
+"npm:bash-language-server" = "5.8.1"
+shfmt = "3.14.1"
+taplo = "0.10.0"
+marksman = "2026-02-08"
